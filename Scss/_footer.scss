@@ -1,0 +1,23 @@
+footer{
+    margin-top: 2rem;
+    .footer_logoInstagram{
+        width: 50px;
+    }
+    .footer_logoFacebook{
+        width: 40px;
+    }
+    background-image: linear-gradient(to left, azure,rgb(137, 210, 212));
+}
+
+@media only screen and (min-width: 769px){
+    footer{
+        margin-top: 2rem;
+        .footer_logoInstagram{
+            width: 80px;
+        }
+        .footer_logoFacebook{
+            width: 70px;
+        }
+        background-image: linear-gradient(to left, azure,rgb(137, 210, 212));
+}
+}

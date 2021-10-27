@@ -1,0 +1,135 @@
+
+
+.navbar_containers{
+
+    background-color: #cb6ce6;
+    
+
+    .bordesRedondeados{
+        height: 50px;
+        margin-left: 5px;
+    }
+
+    h4{
+        display: none;
+        font-family: 'Dancing Script', cursive;
+        font-size: 15px;
+    }
+    .menuHamburguesa{
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 2rem;
+        .nav_menuhamburguesa_submenu{
+            font-size: 14px;
+            color: white;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 768px){
+    .navbar_containers{
+        background-color: #cb6ce6;
+        .bordesRedondeados{
+            height: 100%;
+            margin-left: 5px;
+        }
+        h4{
+            display: inline;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            margin-left: 4rem;
+        }
+        .menuHamburguesa{
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 2rem;
+            .nav_menuhamburguesa_submenu{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .navbar_containers{
+        background-color: #cb6ce6;
+        .bordesRedondeados{
+            height: 50px;
+            margin-left: 10px;
+        }
+        h4{
+            display: flex;
+            
+            font-family: 'Dancing Script', cursive;
+            font-size: 26px;
+            color: white;
+            margin-left: 0;
+            
+            text-align: center;
+        }
+        .menuHamburguesa{
+            font-size: 16px;
+            font-weight: bold;
+            
+            .nav_menuhamburguesa_submenu{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1254px){
+    .navbar_containers{
+        background-color: #cb6ce6;
+        .bordesRedondeados{
+            height: 40px;
+            margin-left: 5px;
+        }
+        h4{
+            display: flex;
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            margin-left: 1rem;
+            text-align: center;
+        }
+        .menuHamburguesa{
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 5rem;
+            display: flex;
+            .nav_menuhamburguesa_submenu{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1624px){
+    .navbar_containers{
+        background-color: #cb6ce6;
+        .bordesRedondeados{
+            
+            height: 80px;
+            margin-left: 6px;
+        }
+        h4{
+            display: flex;
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            margin-left: 0.1rem;
+            text-align: center;
+        }
+        .menuHamburguesa{
+            font-size: 28px;
+            font-weight: bold;
+            justify-content: space-evenly;
+            margin-left: 0rem;
+            .nav_menuhamburguesa_submenu{
+                font-size: 25px;
+            }
+        }
+    }
+}

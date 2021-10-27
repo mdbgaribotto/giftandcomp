@@ -1,0 +1,125 @@
+$medium: 420px;
+
+#quienesSomos{
+    margin-left: 5px;
+    h3{
+        font-family: 'Anton', sans-serif;
+        color:#93B5C6;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .quinesSomos{
+        font-family: 'Acme', sans-serif;
+        color: #abaeb6;
+        font-weight: bold;
+        text-align: center;
+    }
+    .hechoAmor{
+        width: 50%;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+    }
+}
+
+
+@media only screen and (min-width: 769px){
+    #quienesSomos{
+        margin-left: 5px;
+        h3{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 40px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .quinesSomos{
+            font-family: 'Acme', sans-serif;
+            color: #abaeb6;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+        }
+        .hechoAmor{
+            width: 20%;
+            padding-left: 1rem;
+            
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    #quienesSomos{
+        margin-left: 5px;
+        h3{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 40px;
+            padding-top: 30px;
+            text-align: center;
+        }
+        .quinesSomos{
+            font-family: 'Acme', sans-serif;
+            color: #abaeb6;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+        }
+        .hechoAmor{
+            width: 20%;
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1254px){
+    #quienesSomos{
+        margin-left: 5px;
+        h3{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 40px;
+            padding-top: 30px;
+            text-align: center;
+        }
+        .quinesSomos{
+            font-family: 'Acme', sans-serif;
+            color: #abaeb6;
+            font-weight: bold;
+            text-align: center;
+            font-size: 24px;
+        }
+        .hechoAmor{
+            width: 20%;
+            padding-left: 1.2rem;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1624px){
+    #quienesSomos{
+        margin-left: 5px;
+        h3{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 60px;
+            padding-top: 30px;
+            text-align: center;
+        }
+        .quinesSomos{
+            font-family: 'Acme', sans-serif;
+            color: #abaeb6;
+            font-weight: bold;
+            text-align: center;
+            font-size: 36px;
+        }
+        .hechoAmor{
+            width: 25%;
+
+        }
+    }
+}
