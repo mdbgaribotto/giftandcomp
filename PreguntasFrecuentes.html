@@ -12,104 +12,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/estilo.css"> <!-- para vincularlo al archivo css -->
+    <link rel="stylesheet" href="Scss/estilo.css"> <!-- para vincularlo al archivo css -->
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 </head>
 
 <body>
     <header class="principal">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo1.jpg" class="bordesRedondeados" alt="logo" srcset="">
+        <div class="navbar_containers">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm " >
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/giftlogo.svg" alt="Logo" class="bordesRedondeados">
                 </a>
                 <h4> Elegi tus fotos y regalalas! </h4>
-            </div>
-        
-        <nav id="lista">
-                <ul>
-                    <li><a href="Productos.html">Productos</a>
-                        <ul>
-                            <li><a ref="#">Clasicas</a></li>
-                            <li><a ref="#">Polaroid</a></li>
-                            <li><a ref="#">Square</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Promos.html">Promos</a></li>
-                    <li><a href="Ideas.html">Ideas</a></li>
-                    <li><a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="Mediosdepagos.html">Medios de Pago</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menuHamburguesa" id="navbarNav">
+                    <div class="navbar-nav">
+                        
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark nav_menuhamburguesa_submenu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="Productos.html">Polaroid</a></li>
+                                <li><a class="dropdown-item" href="Productos.html">Clásica</a></li>
+                                <li><a class="dropdown-item" href="Productos.html">Square</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-item nav-link" href="Promos.html">Promociones</a>
+                        <a class="nav-item nav-link" href="Ideas.html">Ideas</a>
+                        <a class="nav-item nav-link" href="PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </div>
+                </div>
             </nav>
         </div>
-    
     </header>
 
     <main>
 
         <h2>Preguntas Frecuentes</h2>
+        <section class="Mi_Pedido">
+            <h3>Mi Pedido</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item accordion_caja">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Cómo subo mis fotos?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Podes elegir las fotos que quieras (desde tu computadora, tablet o smartphone). También podés elegir tus fotos de facebook o instagram y subirlas directamente a nuestro sitio.
+                        </div>
+                    </div>
+                </div>
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Que resolución mínima necesito?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La resolución mínima es 200 dpi y el tamaño máximo 10Mb.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cómo saber si mi pedido está confirmado?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Una vez acreditado el pago, te llegará un mail con la confirmación de tu pedido!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Entregas">
+        <h3>Entrega</h3>
+        <div class="accordion" id="accordionExample1">
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Puedo retirar mis fotos en un local?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample1">
+                    <div class="accordion-body">
+                        Trabajamos únicamente con envíos. Entregamos tus fotos rápidamente!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Cuánto tiempo demora mi pedido?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample1">
+                    <div class="accordion-body">
+                        Si vivis en AMBA: 5 días hábiles para todos los productos.
+                        Resto del país: 10 días hábiles.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Cuál es el costo del envío?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample1">
+                    <div class="accordion-body">
+                        Envíos a todo el país $400. Envío gratis para compras mayores a $3000.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="medios_de_pago">
+        <h3>Medios de Pago</h3>
+        <div class="accordion" id="accordionExample2">
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Cuáles son los medios de pago disponibles?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        Trabajamos con la plataforma de pago Mercadopago, TodoPago y Getnet.
+                        Encontrá las promociones en: 
+                            <a href="https://www.mercadopago.com.ar/cuotas">Mercadopago</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        ¿Es seguro?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        Si! Todos los pagos son seguros. Tu dinero está protegido y tus datos son confidenciales
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        ¿Puedo abonar al recibir?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        Para procesar el pedido es necesario que el mismo se encuentre abonado por cualquiera de los medios electrónicos o físicos que ofrecemos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <section class="Contacto">
         <h3>Contacto</h3>
-        <form action="">
-            <fieldset id="formularioContacto">
-                <legend>Formulario de contacto</legend>
-                <div>
-                    <label for="nombre y apellido">Completa tu nombre y apellido</label>
-                    <input type="text" name="nombre" placeholder="nombre">
-                    <!-- campo de accion; el placeholder aparecve en gris en  la box, que desaparece al escribir en el campo-->
-
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item accordion_caja">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        ¿Cómo puedo contactarlos?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body accordion_respuesta">
+                        Podes contactarnos completando el siguiente formulario:
+    
+                        <section class="formularioContacto">
+                            
+                            <form action="">
+                                <fieldset id="formularioContacto">
+                                    
+                                    <div>
+                                        <label for="nombre y apellido">Completa tu nombre y apellido</label>
+                                        <input type="text" name="nombre" placeholder="nombre">
+                                        <!-- campo de accion; el placeholder aparecve en gris en  la box, que desaparece al escribir en el campo-->
+    
+                                    </div>
+    
+                                    <div>
+                                        <label for="email">Escribe tu mail</label>
+                                        <input type="email" required> <!-- required para que sea obligatorio -->
+    
+                                    </div>
+    
+                                    <div>
+                                        <label for="Motivo">Selecciona el Motivo</label>
+                                        <select name="motivo" id="">
+                                            <option value="Consultas">Consultas</option>
+                                            <option value="Pagos">Pagos</option>
+                                            <option value="Envíos">Envíos</option>
+                                        </select>
+    
+                                    </div>
+    
+                                    <div>
+                                        <label for="comentario" name="comentario">Deja
+                                            tu comentario</label>
+                                            
+                                        <textarea name="comentario" id="" cols="32" rows="10"></textarea>
+    
+                                    </div>
+    
+    
+                                    <div>
+                                        <label for="terminos">Aceptar terminos y condiciones</label>
+                                        <input type="checkbox" name="terminos" required>
+    
+                                    </div>
+    
+                                    <div>
+                                        <input type="submit" value="Enviar datos">
+                                        <input type="reset" value="Borrar datos">
+    
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </section>
+    
+                    </div>
                 </div>
-
-                <div>
-                    <label for="email">Escribe tu mail</label>
-                    <input type="email" required> <!-- required para que sea obligatorio -->
-
-                </div>
-
-                <div>
-                    <label for="Motivo">Selecciona el Motivo</label>
-                    <select name="motivo" id="">
-                        <option value="Consultas">Consultas</option>
-                        <option value="Pagos">Pagos</option>
-                        <option value="Envíos">Envíos</option>
-                    </select>
-
-                </div>
-
-                <div>
-                    <label for="comentario" name="comentario">Deja
-                        tu comentario</label>
-                    <textarea name="comentario" id="" cols="50" rows="10"></textarea>
-
-                </div>
+            </div>
+    </section>
 
 
-                <div>
-                    <label for="terminos">Aceptar terminos y condiciones</label>
-                    <input type="checkbox" name="terminos" required>
-
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar datos">
-
-                </div>
-            </fieldset>
-        </form>
 
 </body>
 
@@ -117,10 +302,16 @@
 
 
 <footer>
-    <img src="imagenes/instagram.png" class="logoInstagram" alt="instagram" />
-    <img src="imagenes/facebook.png" class="logoFacebook"  alt="facebook" />
-
+    <div class="redes">
+        <img src="imagenes/logo_footer.svg" class="footer_logo" alt="Logo">
+        <img src="imagenes/logo_instagram.png" class="footer_logoInstagram" alt="instagram" />
+        <img src="imagenes/logo_facebook.png" class="footer_logoFacebook" alt="facebook" />
+        <img src="imagenes/logo_whatsapp.png" class="footer_logowhatsapp" alt="whatsapp" />
+    </div>
 </footer>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </html>

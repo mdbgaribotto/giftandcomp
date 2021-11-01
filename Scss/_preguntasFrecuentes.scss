@@ -1,0 +1,34 @@
+main{
+
+    h2{
+        font-family: 'Anton', sans-serif;
+        color:#93B5C6;
+        font-size: 28px;
+        padding-bottom: 2px;
+        text-align: center;
+        
+    }
+    h3{
+        font-family: 'Anton', sans-serif;
+        color:#93B5C6;
+        font-size: 24px;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    .accordion_caja{
+        padding-top: 0.5rem;
+        margin-bottom: 1rem;
+        .accordion_respuesta{
+            font-weight: bold;
+        }
+    }
+}
+
+
+.formularioContacto{
+    background-color: rgb(231, 139, 227);
+    .textarea{
+        width: 90%;
+    }
+}
+

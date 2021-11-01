@@ -1,0 +1,106 @@
+.ideasconFotos{
+    margin-top: 5px;
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-row-gap: 10px;
+    margin-left: 0.5rem;
+    width: 95%;
+    .ideasFoto{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .ideasconFotos{
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-left: 0.5rem;
+        width: 95%;
+        .ideasFoto{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .ideasconFotos{
+        display: grid;
+        grid-template-columns: 30fr 30fr 30fr;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-left: 5rem;
+        .ideasFoto{
+            width: 90%;
+            opacity: .4; 
+            transition: width 2s;
+            padding-top: 0.5rem;
+            img{
+                object-fit: cover;
+            }
+            &:hover{
+                opacity: 1;
+                border: solid 2px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1254px){
+    .ideasconFotos{
+        display: grid;
+        grid-template-columns: 30fr 30fr 30fr;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-left: 5rem;
+        .ideasFoto{
+            width: 90%;
+            opacity: .4; 
+            transition: width 2s;
+            padding-top: 0.5rem;
+            img{
+                object-fit: cover;
+            }
+            &:hover{
+                opacity: 1;
+                border: solid 2px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1624px){
+    .ideasconFotos{
+        display: grid;
+        grid-template-columns: 33fr 33fr 33fr;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-left: 6rem;
+        .ideasFoto{
+            width: 95%;
+            opacity: .4; 
+            transition: width 2s;
+            padding-top: 0.5rem;
+            img{
+                object-fit: cover;
+            }
+            &:hover{
+                opacity: 1;
+                border: solid 2px;
+                width: 100%;
+            }
+        }
+    }
+}

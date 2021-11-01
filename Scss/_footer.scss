@@ -1,23 +1,104 @@
 footer{
-    margin-top: 2rem;
-    .footer_logoInstagram{
-        width: 50px;
+    background-color: rgb(73, 73, 73);
+    .redes{
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .footer_logo{
+            height: 3rem;
+            margin-left: 5rem;
+        }
+        .footer_logoInstagram{
+            height: 4rem;
+            width: 4rem;
+            
+            
+        }
+        .footer_logoFacebook{
+            height: 4rem;
+            width: 4rem;
+            
+        }
+        .footer_logowhatsapp{
+            height: 4rem;
+            width: 4rem;
+        }
     }
-    .footer_logoFacebook{
-        width: 40px;
-    }
-    background-image: linear-gradient(to left, azure,rgb(137, 210, 212));
 }
 
 @media only screen and (min-width: 769px){
     footer{
-        margin-top: 2rem;
-        .footer_logoInstagram{
-            width: 80px;
+        height: 8rem;
+        .redes{
+            display: flex;
+            
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+            .footer_logo{
+                height: 4rem;
+                margin-left: 5rem;
+            }
+            .footer_logoInstagram{
+                height: 4rem;
+                width: 4rem;
+                
+                
+            }
+            .footer_logoFacebook{
+                height: 4rem;
+                width: 4rem;
+                
+            }
+            .footer_logowhatsapp{
+                height: 4rem;
+                width: 4rem;
+            }
         }
-        .footer_logoFacebook{
-            width: 70px;
-        }
-        background-image: linear-gradient(to left, azure,rgb(137, 210, 212));
+    }
 }
+
+
+@media only screen and (min-width: 1024px){
+    footer{
+        height: 8rem;
+        .redes{
+            display: flex;
+            
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+            .footer_logo{
+                height: 4rem;
+                margin-left: 5rem;
+            }
+            .footer_logoInstagram{
+                height: 4rem;
+                width: 4rem;
+                &:hover{
+                    opacity: 40%;
+                    @keyframes animacion {
+                        from{}
+                        to{
+                            
+                        }
+                        
+                    }
+                }
+            }
+            .footer_logoFacebook{
+                height: 4rem;
+                width: 4rem;
+                
+            }
+            .footer_logowhatsapp{
+                height: 4rem;
+                width: 4rem;
+            }
+        }
+    }
 }

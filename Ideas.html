@@ -11,65 +11,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/estilo.css">  <!-- para vincularlo al archivo css -->
+    <link rel="stylesheet" href="Scss/estilo.css">  <!-- para vincularlo al archivo css -->
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 </head>
 <body>
     <header class="principal">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="imagenes/logo1.jpg" class="bordesRedondeados" alt="logo" srcset="">
+        <div class="navbar_containers">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sm " >
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/giftlogo.svg" alt="Logo" class="bordesRedondeados">
                 </a>
                 <h4> Elegi tus fotos y regalalas! </h4>
-            </div>
-        
-        <nav id="lista">
-                <ul>
-                    <li><a href="Productos.html">Productos</a>
-                        <ul>
-                            <li><a ref="#">Clasicas</a></li>
-                            <li><a ref="#">Polaroid</a></li>
-                            <li><a ref="#">Square</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="Promos.html">Promos</a></li>
-                    <li><a href="Ideas.html">Ideas</a></li>
-                    <li><a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="Mediosdepagos.html">Medios de Pago</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menuHamburguesa" id="navbarNav">
+                    <div class="navbar-nav">
+                        
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark nav_menuhamburguesa_submenu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="Productos.html">Polaroid</a></li>
+                                <li><a class="dropdown-item" href="Productos.html">Clásica</a></li>
+                                <li><a class="dropdown-item" href="Productos.html">Square</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-item nav-link" href="Promos.html">Promociones</a>
+                        <a class="nav-item nav-link" href="Ideas.html">Ideas</a>
+                        <a class="nav-item nav-link" href="PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </div>
+                </div>
             </nav>
         </div>
-    
     </header>
 
 
 
     <main class="ideasconFotos">
 
-        <div class="ideasFoto"><img src="imagenes/1.PNG" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/3.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/4.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/2.PNG" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/6.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/7.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/8.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/9.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/10.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/11.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/12.png" alt=""></div>
-        <div class="ideasFoto"><img src="imagenes/13.png" alt=""></div>
+        <div class="ideasFoto"><img src="imagenes/1.PNG" alt="idea1"></div>
+        <div class="ideasFoto"><img src="imagenes/3.png" alt="idea2"></div>
+        <div class="ideasFoto"><img src="imagenes/4.png" alt="idea3"></div>
+        <div class="ideasFoto"><img src="imagenes/2.PNG" alt="idea4"></div>
+        <div class="ideasFoto"><img src="imagenes/marcos-fotos-personalizados-diy-ideas.jpg" alt="idea5"></div>
+        <div class="ideasFoto"><img src="imagenes/7.png" alt="idea6"></div>
+        <div class="ideasFoto"><img src="imagenes/8.png" alt="idea7"></div>
+        <div class="ideasFoto"><img src="imagenes/9.png" alt="idea8"></div>
+        <div class="ideasFoto"><img src="imagenes/10.png" alt="idea9"></div>
+        <div class="ideasFoto"><img src="imagenes/11.png" alt="idea10"></div>
+        <div class="ideasFoto"><img src="imagenes/12.png" alt="idea11"></div>
+        <div class="ideasFoto"><img src="imagenes/13.png" alt="idea11"></div>
 
 
     </main>
 
     <footer>
-        <img src="imagenes/instagram.png" class="logoInstagram" alt="instagram" />
-        <img src="imagenes/facebook.png" class="logoFacebook" alt="facebook" />
+        <div class="redes">
+            <img src="imagenes/logo_footer.svg" class="footer_logo" alt="Logo">
+            <img src="imagenes/logo_instagram.png" class="footer_logoInstagram" alt="instagram" />
+            <img src="imagenes/logo_facebook.png" class="footer_logoFacebook" alt="facebook" />
+            <img src="imagenes/logo_whatsapp.png" class="footer_logowhatsapp" alt="whatsapp" />
+        </div>
     </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
