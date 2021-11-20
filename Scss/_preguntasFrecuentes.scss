@@ -3,7 +3,7 @@ main{
     h2{
         font-family: 'Anton', sans-serif;
         color:#93B5C6;
-        font-size: 28px;
+        font-size: 26px;
         padding-bottom: 2px;
         text-align: center;
         
@@ -18,19 +18,109 @@ main{
     .accordion_caja{
         padding-top: 0.5rem;
         margin-bottom: 1rem;
+        
+        .accordion_caja_pregunta{
+            font-size: 18px;
+            
+        }
         .accordion_respuesta{
             font-weight: bold;
+            font-size: 14px;
+            
         }
     }
 }
 
 
 .formularioContacto{
+    
     background-color: rgb(231, 139, 227);
+    margin-top: 0.5rem;
+    
+    padding-bottom: 0.5rem;
+    label{
+        margin-top: 0.5rem;
+        margin-left: 0.2rem;
+    }
     textarea{
         width: 90%;
+        margin-left: 0.2rem;
+    }
+    .botones{
+        margin-top: 0.5rem;
     }
 }
 
 
 
+
+@media only screen and (min-width: 1024px){ 
+    main{
+
+        h2{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 28px;
+            padding-bottom: 2px;
+            text-align: center;
+            
+        }
+        h3{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 26px;
+            padding-bottom: 2px;
+            text-align: center;
+        }
+        .accordion_caja{
+            padding-top: 0.5rem;
+            margin-bottom: 1rem;
+            
+            .accordion_caja_pregunta{
+                font-size: 20px;
+                
+            }
+            .accordion_respuesta{
+                font-weight: bold;
+                font-size: 16px;
+                
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1624px){ 
+    main{
+
+        h2{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 34px;
+            padding-bottom: 2px;
+            text-align: center;
+            
+        }
+        h3{
+            font-family: 'Anton', sans-serif;
+            color:#93B5C6;
+            font-size: 32px;
+            padding-bottom: 2px;
+            text-align: center;
+        }
+        .accordion_caja{
+            padding-top: 0.5rem;
+            margin-bottom: 1rem;
+            
+            .accordion_caja_pregunta{
+                font-size: 26px;
+                
+            }
+            .accordion_respuesta{
+                font-weight: bold;
+                font-size: 20px;
+                
+            }
+        }
+    }
+}

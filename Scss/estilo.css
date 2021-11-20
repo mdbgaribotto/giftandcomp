@@ -153,8 +153,110 @@
 }
 
 .carrusel {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  height: 35vh;
+  display: none;
+}
+
+.d-block {
+  height: 30vh;
+}
+
+@media only screen and (min-width: 769px) {
+  .carrusel {
+    height: 50vh;
+    display: block;
+  }
+  .d-block {
+    height: 45vh;
+  }
+  .caption-position {
+    top: 210px;
+  }
+  .caption-position h5 {
+    color: white;
+    -webkit-text-stroke: 1.2px black;
+    font-weight: bolder;
+    font-size: 22px;
+  }
+  .caption-position p {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-weight: bolder;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .carrusel {
+    height: 50vh;
+  }
+  .d-block {
+    height: 45vh;
+  }
+  .caption-position {
+    top: 270px;
+  }
+  .caption-position h5 {
+    color: white;
+    -webkit-text-stroke: 1.2px black;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .caption-position p {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-weight: bolder;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (min-width: 1254px) {
+  .carrusel {
+    height: 75vh;
+  }
+  .d-block {
+    height: 70vh;
+    margin-bottom: 5rem;
+  }
+  .caption-position {
+    top: 390px;
+  }
+  .caption-position h5 {
+    color: white;
+    -webkit-text-stroke: 1.2px black;
+    font-weight: bolder;
+    font-size: 32px;
+  }
+  .caption-position p {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-weight: bolder;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1624px) {
+  .carrusel {
+    height: 55vh;
+  }
+  .d-block {
+    height: 50vh;
+  }
+  .caption-position {
+    top: 480px;
+  }
+  .caption-position h5 {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  .caption-position p {
+    color: white;
+    -webkit-text-stroke: 1.8px black;
+    font-weight: bolder;
+    font-size: 34px;
+  }
 }
 
 #Productosdestacados {
@@ -182,9 +284,9 @@
 #Productosdestacados .texto1 {
   font-family: 'Anton', sans-serif;
   color: #93B5C6;
+  text-align: center;
   font-size: 30px;
   padding-bottom: 2px;
-  text-align: center;
   margin-top: 30px;
 }
 
@@ -293,9 +395,9 @@
   #Productosdestacados .texto1 {
     font-family: 'Anton', sans-serif;
     color: #93B5C6;
+    text-align: center;
     font-size: 45px;
     padding-bottom: 2px;
-    text-align: center;
   }
 }
 
@@ -367,9 +469,9 @@
   .texto1 {
     font-family: 'Anton', sans-serif;
     color: #93B5C6;
+    text-align: center;
     font-size: 40px;
     padding-bottom: 2px;
-    text-align: center;
   }
 }
 
@@ -444,9 +546,9 @@
   .texto1 {
     font-family: 'Anton', sans-serif;
     color: #93B5C6;
+    text-align: center;
     font-size: 40px;
     padding-bottom: 2px;
-    text-align: center;
   }
 }
 
@@ -766,56 +868,110 @@ header .header_principal_container h4 {
   color: cadetblue;
 }
 
-.mediosdepago .mediosdepago_row {
-  margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+padre {
+  width: 95%;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 2fr 1fr;
+      grid-template-areas: "rosa" "amarillo" "azul";
+  gap: 5px;
 }
 
-.mediosdepago .mediosdepago_row .mediosdepago_row_column {
-  padding: 1rem;
+.hijo {
+  padding: 5px;
 }
 
-.mediosdepago .mediosdepago_row .mediosdepago_row_column img {
+.rosa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: rosa;
   width: 100%;
 }
 
-.mediosdepago .mediosdepago_row .mediosdepago_row_column .mediosdepago_row_column_transferencia {
-  height: 68%;
-}
-
-.mediosdepago .mediosdepago_row .mediosdepago_row_column .mediosdepago_row_column_Mercadopago {
-  height: 60%;
+.rosa .producto {
   width: 90%;
-  margin-left: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mediosdepago h2 {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 5px;
-  color: cadetblue;
+.amarillo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: amarillo;
+  width: 100%;
 }
 
-.mediosdepago p {
-  text-align: center;
-  color: chocolate;
-  word-spacing: 5px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  line-height: 1.8rem;
+.amarillo .producto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.verde {
+  background-color: green;
+  grid-area: verde;
+}
+
+.azul {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: azul;
+  width: 100%;
+}
+
+.azul .producto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  padre {
+    width: 95%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "rosa amarillo" "azul azul";
+    gap: 5px;
+  }
+}
+
+.rosa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: rosa;
+  width: 40%;
+}
+
+.rosa .producto {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amarillo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: amarillo;
+  width: 40%;
+}
+
+.amarillo .producto {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promos {
@@ -912,18 +1068,19 @@ header .header_principal_container h4 {
   .ideasconFotos .ideasFoto {
     width: 90%;
     opacity: .4;
-    -webkit-transition: width 2s;
-    transition: width 2s;
-    padding-top: 0.5rem;
+    -webkit-transition: width 2s all ease;
+    transition: width 2s all ease;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
   .ideasconFotos .ideasFoto img {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
   }
   .ideasconFotos .ideasFoto:hover {
     opacity: 1;
-    border: solid 2px;
     width: 100%;
+    scale: 1.2;
   }
 }
 
@@ -941,18 +1098,19 @@ header .header_principal_container h4 {
   .ideasconFotos .ideasFoto {
     width: 90%;
     opacity: .4;
-    -webkit-transition: width 2s;
-    transition: width 2s;
-    padding-top: 0.5rem;
+    -webkit-transition: width 2s all ease;
+    transition: width 2s all ease;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
   .ideasconFotos .ideasFoto img {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
   }
   .ideasconFotos .ideasFoto:hover {
     opacity: 1;
-    border: solid 2px;
     width: 100%;
+    scale: 1.2;
   }
 }
 
@@ -970,17 +1128,18 @@ header .header_principal_container h4 {
   .ideasconFotos .ideasFoto {
     width: 95%;
     opacity: .4;
-    -webkit-transition: width 2s;
-    transition: width 2s;
-    padding-top: 0.5rem;
+    -webkit-transition: width 2s all ease;
+    transition: width 2s all ease;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
   .ideasconFotos .ideasFoto img {
     -o-object-fit: cover;
        object-fit: cover;
+    width: 100%;
   }
   .ideasconFotos .ideasFoto:hover {
     opacity: 1;
-    border: solid 2px;
+    scale: 1.2;
     width: 100%;
   }
 }
@@ -988,7 +1147,7 @@ header .header_principal_container h4 {
 main h2 {
   font-family: 'Anton', sans-serif;
   color: #93B5C6;
-  font-size: 28px;
+  font-size: 26px;
   padding-bottom: 2px;
   text-align: center;
 }
@@ -1006,39 +1165,89 @@ main .accordion_caja {
   margin-bottom: 1rem;
 }
 
+main .accordion_caja .accordion_caja_pregunta {
+  font-size: 18px;
+}
+
 main .accordion_caja .accordion_respuesta {
   font-weight: bold;
+  font-size: 14px;
 }
 
 .formularioContacto {
   background-color: #e78be3;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.formularioContacto label {
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
 }
 
 .formularioContacto textarea {
   width: 90%;
+  margin-left: 0.2rem;
 }
 
-section .caja1 {
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #87c4fa;
-  color: white;
+.formularioContacto .botones {
+  margin-top: 0.5rem;
 }
 
-section .caja2 {
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #6ee49b;
-  color: black;
-  font-style: italic;
+@media only screen and (min-width: 1024px) {
+  main h2 {
+    font-family: 'Anton', sans-serif;
+    color: #93B5C6;
+    font-size: 28px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  main h3 {
+    font-family: 'Anton', sans-serif;
+    color: #93B5C6;
+    font-size: 26px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  main .accordion_caja {
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  main .accordion_caja .accordion_caja_pregunta {
+    font-size: 20px;
+  }
+  main .accordion_caja .accordion_respuesta {
+    font-weight: bold;
+    font-size: 16px;
+  }
 }
 
-section .caja3 {
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #e387fa;
-  color: brown;
-  font-style: bold;
+@media only screen and (min-width: 1624px) {
+  main h2 {
+    font-family: 'Anton', sans-serif;
+    color: #93B5C6;
+    font-size: 34px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  main h3 {
+    font-family: 'Anton', sans-serif;
+    color: #93B5C6;
+    font-size: 32px;
+    padding-bottom: 2px;
+    text-align: center;
+  }
+  main .accordion_caja {
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  main .accordion_caja .accordion_caja_pregunta {
+    font-size: 26px;
+  }
+  main .accordion_caja .accordion_respuesta {
+    font-weight: bold;
+    font-size: 20px;
+  }
 }
 
 footer {
@@ -1068,18 +1277,18 @@ footer .redes .footer_logo {
 }
 
 footer .redes .footer_logoInstagram {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 footer .redes .footer_logoFacebook {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 footer .redes .footer_logowhatsapp {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 @media only screen and (min-width: 769px) {

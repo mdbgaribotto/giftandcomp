@@ -1,0 +1,96 @@
+padre{
+    width: 95%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    "rosa"
+    "amarillo"
+    "azul";
+    gap: 5px;
+}
+
+.hijo{
+    
+    padding: 5px;
+
+}
+
+.rosa{
+    
+    grid-area: rosa;
+    width: 100%;
+    .producto{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+.amarillo{
+    grid-area: amarillo;
+    width: 100%;
+    .producto{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.verde{
+    background-color: green;
+    grid-area: verde;
+}
+
+.azul{
+    grid-area: azul;
+    width: 100%;
+    .producto{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    padre{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "rosa amarillo"
+        "azul azul";
+        gap: 5px;
+        }
+    }
+
+    .rosa{
+    
+        grid-area: rosa;
+        width: 40%;
+        .producto{
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+    }
+
+
+    .amarillo{
+        grid-area: amarillo;
+        width: 40%;
+        .producto{
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
