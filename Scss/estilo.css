@@ -631,7 +631,7 @@
   #quienesSomos h3 {
     font-family: 'Anton', sans-serif;
     color: #93B5C6;
-    font-size: 40px;
+    font-size: 36px;
     padding-top: 30px;
     text-align: center;
   }
@@ -640,7 +640,7 @@
     color: #abaeb6;
     font-weight: bold;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
   }
   #quienesSomos .hechoAmor {
     width: 10%;
@@ -664,7 +664,7 @@
     color: #abaeb6;
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
   }
   #quienesSomos .hechoAmor {
     width: 15%;
@@ -745,16 +745,16 @@
   #Opiniones h3 {
     font-family: 'Anton', sans-serif;
     color: #93B5C6;
-    font-size: 40px;
+    font-size: 36px;
     padding-top: 20px;
     text-align: center;
   }
   #Opiniones .opiniones_cards {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
   #Opiniones .opiniones_cards_p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
   #Opiniones .opiniones_small {
@@ -769,16 +769,16 @@
   #Opiniones h3 {
     font-family: 'Anton', sans-serif;
     color: #93B5C6;
-    font-size: 40px;
+    font-size: 36px;
     padding-top: 20px;
     text-align: center;
   }
   #Opiniones .opiniones_cards {
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
   }
   #Opiniones .opiniones_cards_p {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
   #Opiniones .opiniones_small {
