@@ -6,11 +6,12 @@
     margin-left: 0.5rem;
     margin-top: 1rem;
     width: 95%;
+    .fotopromo_banner{
+        display: none;
+    }
     .fotoPromo{
-        
         img{
             max-width: 100%;
-            
         }
         
         &:hover{ 
@@ -29,14 +30,13 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-left: 5rem;
+        margin-left: 3rem;
         width: 90%;
         padding-top: 0.5rem;
         .fotoPromo{
             
             img{
                 width: 100%;
-                
             }
             
             &:hover{ 
@@ -44,6 +44,29 @@
                 border: solid 2px white;
                 opacity: 40%;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .promos{
+        
+        .fotopromo_banner{
+            display: block;
+            width: 90%;
+            .banner{
+                height: 30rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1254px){
+    .promos{
+        width: 90%;
+        .fotoPromo{
+            height: 1fr;
         }
     }
 }
