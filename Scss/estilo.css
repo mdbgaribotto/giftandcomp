@@ -868,27 +868,15 @@ header .header_principal_container h4 {
   color: cadetblue;
 }
 
-padre {
-  width: 95%;
-  height: 300px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 2fr 2fr 1fr;
-      grid-template-rows: 1fr 2fr 2fr 1fr;
-      grid-template-areas: "rosa" "amarillo" "azul";
-  gap: 5px;
-}
-
 .hijo {
   padding: 5px;
 }
 
+.naranja {
+  display: none;
+}
+
 .rosa {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: rosa;
   width: 100%;
 }
 
@@ -900,9 +888,6 @@ padre {
 }
 
 .amarillo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: amarillo;
   width: 100%;
 }
 
@@ -914,14 +899,17 @@ padre {
 }
 
 .verde {
-  background-color: green;
-  grid-area: verde;
+  width: 100%;
+}
+
+.verde .producto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .azul {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: azul;
   width: 100%;
 }
 
@@ -932,46 +920,160 @@ padre {
   margin-right: auto;
 }
 
+.rojo {
+  width: 100%;
+}
+
+.rojo .producto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.violeta .producto {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 769px) {
-  padre {
-    width: 95%;
+  .padre {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 2fr;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas: "rosa amarillo" "azul azul";
-    gap: 5px;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    -ms-grid-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: "naranja naranja" "rosa amarillo" "azul verde" "rojo violeta";
+  }
+  .hijo {
+    padding: 5px;
+  }
+  .naranja {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: naranja;
+    width: 100%;
+  }
+  .naranja .producto {
+    height: 25rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rosa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: rosa;
+    width: 100%;
+  }
+  .rosa .producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .amarillo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: amarillo;
+    width: 100%;
+  }
+  .amarillo .producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .azul {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: azul;
+    width: 100%;
+  }
+  .azul .producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .verde {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: verde;
+    width: 100%;
+  }
+  .verde .producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rojo {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: rojo;
+    width: 100%;
+  }
+  .rojo .producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .violeta {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: violeta;
+    width: 100%;
+  }
+  .violeta .producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.rosa {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: rosa;
-  width: 40%;
+@media only screen and (min-width: 1024px) {
+  .naranja {
+    display: -ms-grid;
+    display: grid;
+    grid-area: naranja;
+    width: 100%;
+  }
+  .naranja .producto {
+    height: 35rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.rosa .producto {
-  width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.amarillo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: amarillo;
-  width: 40%;
-}
-
-.amarillo .producto {
-  width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (min-width: 1254px) {
+  .padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
+    -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: "naranja naranja naranja" "rosa amarillo azul" "verde rojo violeta";
+  }
+  .naranja {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: naranja;
+    width: 100%;
+  }
+  .naranja .producto {
+    height: 45rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .promos {
@@ -1360,25 +1462,19 @@ footer .redes .footer_logowhatsapp {
   footer .redes .footer_logoInstagram:hover {
     opacity: 40%;
   }
-  @-webkit-keyframes animacion {
-    from {
-    }
-    to {
-    }
-  }
-  @keyframes animacion {
-    from {
-    }
-    to {
-    }
-  }
   footer .redes .footer_logoFacebook {
     height: 4rem;
     width: 4rem;
   }
+  footer .redes .footer_logoFacebook:hover {
+    opacity: 40%;
+  }
   footer .redes .footer_logowhatsapp {
     height: 4rem;
     width: 4rem;
+  }
+  footer .redes .footer_logowhatsapp:hover {
+    opacity: 40%;
   }
 }
 

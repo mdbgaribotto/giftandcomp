@@ -1,37 +1,28 @@
-padre{
-    width: 95%;
-    height: 300px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
-    grid-template-areas: 
-    "rosa"
-    "amarillo"
-    "azul";
-    gap: 5px;
+@mixin grid_producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .hijo{
-    
     padding: 5px;
-
 }
 
+.naranja{
+    display:none;
+}
 .rosa{
-    
-    grid-area: rosa;
     width: 100%;
     .producto{
         width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        
     }
 }
 
 .amarillo{
-    grid-area: amarillo;
     width: 100%;
     .producto{
         width: 90%;
@@ -41,13 +32,18 @@ padre{
     }
 }
 
+
 .verde{
-    background-color: green;
-    grid-area: verde;
+    width: 100%;
+    .producto{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .azul{
-    grid-area: azul;
     width: 100%;
     .producto{
         width: 90%;
@@ -57,40 +53,125 @@ padre{
     }
 }
 
+.rojo{
+    width: 100%;
+    .producto{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.violeta{
+    .producto{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 @media only screen and (min-width: 769px){
-    padre{
-        width: 95%;
+    .padre{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas: 
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "naranja naranja"
         "rosa amarillo"
-        "azul azul";
-        gap: 5px;
-        }
+        "azul verde"
+        "rojo violeta";
+    }
+    .hijo{
+        padding: 5px;
     }
 
-    .rosa{
-    
-        grid-area: rosa;
-        width: 40%;
+    .naranja{
+        display: grid;
+        grid-area: naranja;
+        width: 100%;
+        
         .producto{
-            width: 70%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            height: 25rem;
+            @include grid_producto();
             
         }
     }
-
-
-    .amarillo{
-        grid-area: amarillo;
-        width: 40%;
+    .rosa{
+        grid-area: rosa;
+        width: 100%;
         .producto{
-            width: 70%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            @include grid_producto()
         }
     }
+    .amarillo{
+        grid-area: amarillo;
+        width: 100%;
+        .producto{
+            @include grid_producto()
+        }
+    }
+    .azul{
+        grid-area: azul;
+        width: 100%;
+        .producto{
+            @include grid_producto()
+        }
+    }
+    .verde{
+        grid-area: verde;
+        width: 100%;
+        .producto{
+            @include grid_producto()
+        }
+    }
+    .rojo{
+        grid-area: rojo;
+        width: 100%;
+        .producto{
+            @include grid_producto()
+        }
+    }
+    .violeta{
+        grid-area: violeta;
+        width: 100%;
+        .producto{
+            @include grid_producto()
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .naranja{
+        display: grid;
+        grid-area: naranja;
+        width: 100%;
+        .producto{
+            height: 35rem;
+            @include grid_producto();
+        }
+    }
+}
+
+@media only screen and (min-width: 1254px){
+    .padre{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "naranja naranja naranja"
+        "rosa amarillo azul"
+        "verde rojo violeta"
+    }
+    .naranja{
+        display: grid;
+        grid-area: naranja;
+        width: 100%;
+        .producto{
+            height: 45rem;
+            @include grid_producto();
+        }
+    }
+}

@@ -81,23 +81,22 @@ footer{
                 width: 4rem;
                 &:hover{
                     opacity: 40%;
-                    @keyframes animacion {
-                        from{}
-                        to{
-                            
-                        }
-                        
-                    }
                 }
             }
             .footer_logoFacebook{
                 height: 4rem;
                 width: 4rem;
+                &:hover{
+                    opacity: 40%;
+                }
                 
             }
             .footer_logowhatsapp{
                 height: 4rem;
                 width: 4rem;
+                &:hover{
+                    opacity: 40%;
+                }
             }
         }
     }
