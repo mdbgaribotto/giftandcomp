@@ -1,5 +1,6 @@
 #Opiniones{
     margin-left: 5px;
+    width: 98%;
     h3{
         font-family: 'Anton', sans-serif;
         color:#93B5C6;
@@ -67,7 +68,7 @@
 }
 
 
-@media only screen and (min-width: 1254px){
+@media only screen and (min-width: 1536px){
     #Opiniones{
         margin-left: 5px;
         h3{
@@ -95,6 +96,7 @@
 @media only screen and (min-width: 1624px){
     #Opiniones{
         margin-left: 5px;
+        width: 90%;
         h3{
             font-family: 'Anton', sans-serif;
             color:#93B5C6;

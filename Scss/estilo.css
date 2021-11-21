@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   header {
     position: -webkit-sticky;
     position: sticky;
@@ -210,7 +210,7 @@
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   .carrusel {
     height: 75vh;
   }
@@ -401,7 +401,7 @@
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   #Productosdestacados {
     margin-left: 5px;
   }
@@ -624,7 +624,7 @@
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   #quienesSomos {
     margin-left: 5px;
   }
@@ -673,6 +673,7 @@
 
 #Opiniones {
   margin-left: 5px;
+  width: 98%;
 }
 
 #Opiniones h3 {
@@ -738,7 +739,7 @@
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   #Opiniones {
     margin-left: 5px;
   }
@@ -765,6 +766,7 @@
 @media only screen and (min-width: 1624px) {
   #Opiniones {
     margin-left: 5px;
+    width: 90%;
   }
   #Opiniones h3 {
     font-family: 'Anton', sans-serif;
@@ -1046,7 +1048,7 @@ header .header_principal_container h4 {
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   .padre {
     display: -ms-grid;
     display: grid;
@@ -1160,7 +1162,7 @@ header .header_principal_container h4 {
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   .promos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1250,7 +1252,7 @@ header .header_principal_container h4 {
   }
 }
 
-@media only screen and (min-width: 1254px) {
+@media only screen and (min-width: 1536px) {
   .ideasconFotos {
     display: -ms-grid;
     display: grid;

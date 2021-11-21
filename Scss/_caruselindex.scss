@@ -3,6 +3,7 @@ $color_font:white;
 .carrusel{
     height: 35vh;
     display: none;
+    
 }
 
 .d-block {
@@ -66,7 +67,7 @@ $color_font:white;
 }
 
 
-@media only screen and (min-width: 1254px){
+@media only screen and (min-width: 1536px){
     .carrusel{
         height: 75vh;
     }
