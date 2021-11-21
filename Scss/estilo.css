@@ -517,10 +517,7 @@
        object-fit: cover;
   }
   #Productosdestacados .cajasProductos .col .productosdestacados_col_imagen4 {
-    width: 100%;
-    height: 70vh;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 73vh;
   }
   #Productosdestacados .cajasProductos .col .productosdestacados_col_imagen5 {
     width: 100%;
