@@ -50,13 +50,31 @@
 
 @media only screen and (min-width: 1024px){
     .promos{
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+        width: 90%;
+        padding-top: 0.5rem;
         .fotopromo_banner{
             display: block;
             width: 90%;
             .banner{
                 height: 30rem;
                 width: 100%;
+            }
+        }
+        .fotoPromo{
+            
+            img{
+                width: 100%;
+            }
+            
+            &:hover{ 
+                opacity: 1;
+                border: solid 2px white;
+                opacity: 40%;
             }
         }
     }
