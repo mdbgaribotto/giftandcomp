@@ -1162,10 +1162,27 @@ header .header_principal_container h4 {
 
 @media only screen and (min-width: 1254px) {
   .promos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 3rem;
+    padding-top: 0.5rem;
     width: 90%;
   }
   .promos .fotoPromo {
-    height: 1fr;
+    margin-right: 5px;
+    width: 40%;
+  }
+  .promos .fotopromo_banner {
+    height: 65vh;
+  }
+  .promos .fotopromo_banner .banner {
+    height: 55vh;
   }
 }
 

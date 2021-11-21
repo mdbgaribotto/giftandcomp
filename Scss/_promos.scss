@@ -82,9 +82,24 @@
 
 @media only screen and (min-width: 1254px){
     .promos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 3rem;
+        padding-top: 0.5rem;
         width: 90%;
         .fotoPromo{
-            height: 1fr;
+            margin-right: 5px;
+            width: 40%;
+            .img{
+                
+            }
+        }
+        .fotopromo_banner{
+            height: 65vh;
+            .banner{
+                height: 55vh;
+            }
         }
     }
 }
